@@ -1,0 +1,167 @@
+/* Responsive */
+@media (min-width: 300px) and (max-width: 576px){
+    body{
+        /* width: 98vw; */
+        
+    }
+    /* header */
+    /* Header-Nav */
+    .head-nav .container{
+        padding: 0 0;
+    }
+    
+    .navigator:active .page{
+        opacity: 100;
+        transform: translateZ(2px);
+    }
+
+    .page{
+        opacity: 0;
+        position: absolute;
+        left: 0;
+        top: 80px;
+        width: 100%;
+        
+    }
+    /* End head-Nav */
+    /* Banner */
+    .head-banner .container{
+        flex-direction: column;
+        padding: 0 0px;
+    }
+
+    .text-banner{
+        width: 100%;
+    }
+
+    .banner-button{
+        width: 100%;
+    }
+
+    .banner-button .nav-button{
+        /* scale: 100; */
+        /* width: 100%; */
+    }
+    
+    .image-banner{
+        width: 100%;
+        margin: 50px 0;
+    }
+
+    .stiker-simle{
+        left: 0px;
+    }
+
+    .stiker-shop{
+        right: 0;
+    }
+
+    .stiker-star{
+        left: 0;
+    }
+
+    /* Head-Logo */
+    .head-logo{
+        overflow: auto;
+    }
+
+    .logo p img{
+        position: static;
+        opacity: 100;
+    }
+    /* End Head-Logo */
+    /* End Header */
+    /* Main */
+    /* Main-Style */
+    .main-style .container{
+        /* overflow: auto; */
+    }
+
+    .style-image{
+        /* width: 1400px; */
+        overflow: auto;
+    }
+
+    .style-image img{
+        margin: 0 20px;
+    }
+    /* End Main-Style */
+    /* Main-Hype */
+    .hype-contents{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    /* Main-Shop */
+    .main-shop{
+        min-width: 375px;
+    }
+    
+    .shop-contents{
+        /* width: 100%; */
+    }
+
+    .kolom{
+        width: 100%;
+    }
+
+    .long{
+        margin-bottom: 20px;
+        /* height: 80%; */
+        /* width: 95%; */
+    }
+
+    .shop-content{
+        /* max-width: 95%; */
+        /* width: fit-content; */
+        /* width: 98vw; */
+        width: 100%;
+        min-height: 500px;
+        overflow: auto;
+    }
+
+    .kolom{
+        /* min-width: 98vw; */
+        /* overflow: auto; */
+        height: auto;
+    }
+
+    .shop-content div{
+        /* width: auto; */
+        width: 90%;
+        height: 50%;
+    }
+
+    .shop-content div img{
+        /* width: auto; */
+        height: 50%;
+        /* opacity: 0; */
+    }
+
+    .half{
+        width: 100%;
+        height: 300px;
+        margin-bottom: 20px;
+        /* width: auto; */
+    }
+    /* End Main-Shop */
+    /* Main-Vibe */
+    .gallery{
+        overflow: auto;
+        width: 100%;
+    }
+
+    .gallery-kolom{
+        margin: 0 20px;
+    }
+    /* End Main-Vibe */
+    /* Footer */
+    .footer-logo{
+        width: 100%;
+    }
+
+    .col-sm-12{
+        margin: 10px 0;
+    }
+}
