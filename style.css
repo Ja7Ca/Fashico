@@ -63,7 +63,7 @@ body{
 .header{
     /* width: 100vw; */
     overflow: hidden;
-    background-image: url(Asset/bg\ header.png);
+    background-image: url(Asset/bg-header.png);
     background-size: cover;
 }
 
