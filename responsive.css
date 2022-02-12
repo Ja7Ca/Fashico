@@ -1,8 +1,17 @@
 /* Responsive */
-@media (min-width: 300px) and (max-width: 576px){
+/* Mobile */
+@media (min-width: 0px) and (max-width: 576px){
     body{
         /* width: 98vw; */
-        
+        border: 1px solid blue;
+    }
+
+    .buttton{
+        width: 100px;
+    }
+
+    .container{
+        padding: 0 5px;
     }
     /* header */
     /* Header-Nav */
@@ -27,7 +36,7 @@
     /* Banner */
     .head-banner .container{
         flex-direction: column;
-        padding: 0 0px;
+        /* padding: 0 5px; */
     }
 
     .text-banner{
@@ -41,6 +50,10 @@
     .banner-button .nav-button{
         /* scale: 100; */
         /* width: 100%; */
+    }
+
+    .nav-button img{
+        margin-right: 5px;
     }
     
     .image-banner{
@@ -95,7 +108,8 @@
     }
     /* Main-Shop */
     .main-shop{
-        min-width: 375px;
+        width: 100%;
+        border: 1px solid blue;
     }
     
     .shop-contents{
@@ -157,11 +171,188 @@
     }
     /* End Main-Vibe */
     /* Footer */
+    .footer{
+        width: 100%;
+        overflow-x: hidden;
+    }
+
     .footer-logo{
         width: 100%;
     }
 
-    .col-sm-12{
+    .footer .row{
+        max-width: auto;
+    }
+
+    .col-12{
         margin: 10px 0;
     }
+}
+
+/* Landspace */
+@media (min-width: 576px) and (max-width: 768px){
+    .style-image{
+        overflow: auto;
+    }
+    .style-image img{
+        margin: 0 20px;
+    }
+
+    .gallery{
+        overflow: auto;
+        width: 100%;
+    }
+
+    .gallery-kolom{
+        margin: 0 20px;
+    }
+
+    .long{
+        margin-bottom: 20px;
+        /* height: 80%; */
+        /* width: 95%; */
+    }
+}
+
+/* Ipad */
+@media (min-width: 768px) and (max-width: 992px){
+    .text-banner{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    
+    .image-banner{
+        width: 100%;
+    }
+
+    .style-image{
+        overflow: auto;
+    }
+    .style-image img{
+        margin: 0 20px;
+    }
+
+    .gallery{
+        overflow: auto;
+        width: 100%;
+    }
+
+    .gallery-kolom{
+        margin: 0 20px;
+    }
+
+    .long{
+        margin-bottom: 20px;
+        /* height: 80%; */
+        /* width: 95%; */
+    }
+
+    .banner-button{
+        width: 100%;
+    }
+    .footer-logo{
+        width: 100%;
+    }
+
+}
+
+@media (min-width: 922px) and (max-width: 1200px){
+    .text-banner{
+        width: 55%;
+        margin-bottom: 50px;
+        padding: 0;
+    }
+    
+    .image-banner{
+        width: 45%;
+    }
+
+    .stiker-smile{
+        left: 20px;
+        top: 100px;
+    }
+    
+    .stiker-star{
+        left: 10px;
+        bottom: 100px;
+    }
+    
+    .stiker-shop{
+        right: 20px;
+        top: 200px;
+    }
+
+    .style-image{
+        overflow: auto;
+    }
+    .style-image img{
+        margin: 0 20px;
+    }
+
+    .hype-content img{
+        width: 70%;
+    }
+
+    /* .kolom{
+        width: 48%;
+    }
+    .shop-content{
+        width: 100%;
+    } */
+
+    .gallery{
+        overflow: auto;
+        width: 100%;
+    }
+
+    .gallery-kolom{
+        margin: 0 20px;
+    }
+
+    .long{
+        margin-bottom: 20px;
+        /* height: 80%; */
+        /* width: 95%; */
+    }
+
+    .banner-button{
+        width: 100%;
+    }
+
+    .footer-logo{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .row{
+        width: 80%;
+    }
+
+}
+
+@media (min-width: 1200px){
+    .main-style .container{
+        max-width: 100%;
+    }
+
+    .shop-content{
+        width: 500px;
+    }
+
+    .shop-content div{
+        width: 100%;
+    }
+
+    .shop-content div img{
+        width: 40%;
+    }
+
+    .sell-1, .sell-2, .sell-3{
+        /* width: 40%;
+        height: 80%; */
+        bottom: -60px;
+    }
+    .row{
+        width: 100%;
+    }
+
 }

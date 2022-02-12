@@ -7,6 +7,7 @@
 
 body{
     /* width: 100vw; */
+    overflow-x: hidden;
 }
 
 .container{
@@ -72,6 +73,7 @@ body{
     width: 98.9vw;
     overflow: hidden;
     transform: translateZ(-10px); */
+    
 }
 /* Head-Nav */
 .head-nav{
@@ -327,7 +329,7 @@ button img{
     border-bottom: 1px solid #757575;
 }
 
-.footer .container .row .col-2{
+.footer .container .row .col-lg-2{
     padding: 20px 0;
 }
 
