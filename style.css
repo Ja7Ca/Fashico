@@ -5,6 +5,48 @@
     box-sizing: border-box;
 }
 
+/* Animasi */
+@keyframes scroll-down{
+    0%{position: relative; top: 0; right: 0px; transform: translateZ(100);}
+    100%{top: 2220px; right: 650px;}
+}
+
+@keyframes hilang {
+    0% {opacity: 100;}
+    100% {opacity: 0;}
+}
+
+@keyframes muncul {
+    0% {opacity: 0;}
+    100% {opacity: 100;}
+}
+
+.move-scroll{
+    transform: translateZ(1000);
+    animation-name: scroll-down;
+    animation-duration: 3s;
+    animation-play-state: running;
+}
+
+.hidden{
+    /* animation-name: hilang;
+    animation-duration: 0s; */
+    opacity: 0;
+}
+
+.show{
+    /* animation-name: muncul;
+    animation-duration: 0.1s;
+    animation-delay: 3s; */
+    opacity: 100;
+    transition-delay: 0.85s;
+}
+/* End Animasi */
+
+#phone-blind{
+    /* opacity: 0; */
+}
+
 body{
     /* width: 100vw; */
     overflow-x: hidden;
@@ -63,7 +105,7 @@ body{
 /* Header */
 .header{
     /* width: 100vw; */
-    overflow: hidden;
+    /* overflow: hidden; */
     background-image: url(Asset/bg-header.png);
     background-size: cover;
 }
@@ -118,6 +160,8 @@ body{
 
 .image-banner{
     width: 50%;
+    min-height: 100%;
+    /* height: fit-content; */
 }
 
 .head-banner .container{
@@ -172,6 +216,12 @@ button img{
 /* End Header */
 
 /* Main */
+/* .header{
+    transform: translateZ(10px);
+}
+.main{
+    transform: translateZ(1px);
+} */
 /* Main-Style */
 .main-style{
     padding: 50px 0;

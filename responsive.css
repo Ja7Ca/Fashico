@@ -1,9 +1,13 @@
 /* Responsive */
 /* Mobile */
 @media (min-width: 0px) and (max-width: 576px){
+    @keyframes scroll-down{
+        0%{position: relative; top: 0; right: 0px;}
+        100%{top: 2220px; right: -600px;}
+    }
+    
     body{
         /* width: 98vw; */
-        border: 1px solid blue;
     }
 
     .buttton{
@@ -106,10 +110,13 @@
         justify-content: space-between;
         align-items: center;
     }
+
+    .hype-content img{
+        width: 60%;
+    }
     /* Main-Shop */
     .main-shop{
         width: 100%;
-        border: 1px solid blue;
     }
     
     .shop-contents{
@@ -191,11 +198,24 @@
 
 /* Landspace */
 @media (min-width: 576px) and (max-width: 768px){
+    @keyframes scroll-down{
+        0%{position: relative; top: 0; right: 0px;}
+        100%{top: 2220px; right: -600px;}
+    }
+
+    .head-logo{
+        overflow: auto;
+    }
+
     .style-image{
         overflow: auto;
     }
     .style-image img{
         margin: 0 20px;
+    }
+
+    .hype-content img{
+        width: 70%;
     }
 
     .gallery{
@@ -216,6 +236,11 @@
 
 /* Ipad */
 @media (min-width: 768px) and (max-width: 992px){
+    @keyframes scroll-down{
+        0%{position: relative; top: 0; right: 0px;}
+        100%{top: 2220px; right: -600px;}
+    }
+
     .text-banner{
         width: 100%;
         margin-bottom: 50px;
@@ -225,11 +250,19 @@
         width: 100%;
     }
 
+    .head-logo{
+        overflow: auto;
+    }
+
     .style-image{
         overflow: auto;
     }
     .style-image img{
         margin: 0 20px;
+    }
+
+    .hype-content img{
+        width: 70%;
     }
 
     .gallery{
@@ -257,6 +290,11 @@
 }
 
 @media (min-width: 922px) and (max-width: 1200px){
+    @keyframes scroll-down{
+        0%{position: relative; top: 0; right: 0px;}
+        100%{top: 2220px; right: 20px;}
+    }
+
     .text-banner{
         width: 55%;
         margin-bottom: 50px;
