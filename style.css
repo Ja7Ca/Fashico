@@ -4,47 +4,53 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 /* Animasi */
-@keyframes scroll-down{
-    0%{position: relative; top: 0; right: 0px; transform: translateZ(100);}
-    100%{top: 2220px; right: 650px;}
+
+.hide{
+    /* transition-delay: 1s; */
+    opacity: 0;
 }
 
-@keyframes hilang {
-    0% {opacity: 100;}
-    100% {opacity: 0;}
+/* End Animasi */
+.move-scroll-down{
+    position: absolute;
+    top: 1080px;
+    left: -23%;
+    transition-duration: 2s;
 }
 
-@keyframes muncul {
-    0% {opacity: 0;}
-    100% {opacity: 100;}
+.move-scroll-up{
+    position: absolute;
+    top: 0;
+    left: 25%;
+    transition-duration: 2s;
 }
 
-.move-scroll{
-    transform: translateZ(1000);
-    animation-name: scroll-down;
-    animation-duration: 3s;
-    animation-play-state: running;
+.start-position{
+    position: absolute;
+    top: 0;
+    left: 25%;
 }
 
 .hidden{
-    /* animation-name: hilang;
-    animation-duration: 0s; */
     opacity: 0;
 }
 
 .show{
-    /* animation-name: muncul;
-    animation-duration: 0.1s;
-    animation-delay: 3s; */
     opacity: 100;
     transition-delay: 0.85s;
 }
 /* End Animasi */
 
-#phone-blind{
-    /* opacity: 0; */
+#phone-scroll{
+    /*  */
+}
+
+#phone-list{
+    position: static;
+    width: 301px;
+    height: 601px;
+    margin-right: 40px;
 }
 
 body{
@@ -120,7 +126,7 @@ body{
 /* Head-Nav */
 .head-nav{
     padding: 30px 0;
-    transform: translateZ(1px);
+    z-index: 999;
 }
 
 .nav-button{
@@ -132,7 +138,7 @@ body{
     font-weight: 100;
 }
 
-.logo p img{
+.logo img{
     position: absolute;
     opacity: 0;
 }
@@ -149,18 +155,19 @@ body{
     font-size: 18px;
 }
 
+.page .nav-button{
+    display: none;
+}
+
 /* End Head-Nav */
 /* Head-Banner */
-.head-banner{
-    padding: 50px 0;
-}
 .text-banner{
     width: 50%;
 }
 
 .image-banner{
     width: 50%;
-    min-height: 100%;
+    height: 601px;
     /* height: fit-content; */
 }
 
@@ -171,6 +178,8 @@ body{
 
 .head-banner{
     padding: 50px 0;
+    position: relative;
+    z-index: 998;
 }
 
 .banner-title{
@@ -374,6 +383,14 @@ button img{
     padding-bottom : 50px;
 }
 
+.row{
+    width: 100%;
+}
+
+.col-12{
+    margin: 20px 0;
+}
+
 .footer .container{
     padding: 50px 0;
     border-bottom: 1px solid #757575;
@@ -391,6 +408,6 @@ button img{
 
 .footer-logo{
     margin-top: 100px;
-    width: 70%;
+    width: 30%;
 }
 /* End Footer */

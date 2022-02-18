@@ -1,13 +1,73 @@
 /* Responsive */
 /* Mobile */
 @media (min-width: 0px) and (max-width: 576px){
-    @keyframes scroll-down{
-        0%{position: relative; top: 0; right: 0px;}
-        100%{top: 2220px; right: -600px;}
+    .banner-title, .main-title{
+        font-size: 32px;
+    }
+
+    .banner-subtitle, .main-subtitle{
+        font-size: 16px;
+    }
+
+    .button{
+        font-size: 16px;
+    }
+
+    .head-banner{
+        overflow: hidden;
+    }
+
+    .start-slide{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .slide-left{
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition-duration: 2s;
+    }
+
+    .slide-right{
+        position: absolute;
+        top: 0;
+        left: 1000px;
+        transition-duration: 2s;
+    }
+
+    .hidden{
+        opacity: 0;
+    }
+    
+    .show{
+        opacity: 100;
+        transition-delay: 0.85s;
+    }
+
+    .move-scroll-down{
+        position: absolute;
+        /* top: 1080px; */ top: 0;
+        left: 200%;
+        transition-duration: 2s;
+    }
+
+    .move-scroll-up{
+        position: absolute;
+        top: 0;
+        left: 10%;
+        transition-duration: 2s;
+    }
+    
+    .start-position{
+        position: absolute;
+        top: 0;
+        left: 10%;
     }
     
     body{
-        /* width: 98vw; */
+        /* overflow-x: hidden; */
     }
 
     .buttton{
@@ -19,13 +79,27 @@
     }
     /* header */
     /* Header-Nav */
+    .head-nav{
+        
+    }
+    .head-banner{
+        z-index: 998;
+    }
+    .head-nav .nav-button{
+        display: none;
+    }
+
     .head-nav .container{
         padding: 0 0;
     }
     
     .navigator:active .page{
         opacity: 100;
-        transform: translateZ(2px);
+    }
+
+    .logo{
+        width: 100%;
+        padding: 0 20px;
     }
 
     .page{
@@ -34,7 +108,18 @@
         left: 0;
         top: 80px;
         width: 100%;
-        
+        background-color: white;
+        padding: 0 20px;
+        top: 40px;
+        z-index: 999;
+    }
+
+    .page a{
+        margin: 10px 0;
+    }
+
+    .page .nav-button{
+        display: block;
     }
     /* End head-Nav */
     /* Banner */
@@ -82,7 +167,7 @@
         overflow: auto;
     }
 
-    .logo p img{
+    .logo img{
         position: static;
         opacity: 100;
     }
@@ -198,9 +283,48 @@
 
 /* Landspace */
 @media (min-width: 576px) and (max-width: 768px){
-    @keyframes scroll-down{
-        0%{position: relative; top: 0; right: 0px;}
-        100%{top: 2220px; right: -600px;}
+    .head-banner{
+        overflow: hidden;
+    }
+
+    .start-slide{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .slide-left{
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition-duration: 2s;
+    }
+
+    .slide-right{
+        position: absolute;
+        top: 0;
+        left: 1000px;
+        transition-duration: 2s;
+    }
+
+    .move-scroll-down{
+        position: absolute;
+        /* top: 1080px; */ top: 0;
+        left: 200%;
+        transition-duration: 2s;
+    }
+
+    .move-scroll-up{
+        position: absolute;
+        top: 0;
+        left: 10%;
+        transition-duration: 2s;
+    }
+    
+    .start-position{
+        position: absolute;
+        top: 0;
+        left: 10%;
     }
 
     .head-logo{
@@ -236,9 +360,53 @@
 
 /* Ipad */
 @media (min-width: 768px) and (max-width: 992px){
-    @keyframes scroll-down{
-        0%{position: relative; top: 0; right: 0px;}
-        100%{top: 2220px; right: -600px;}
+    .head-banner{
+        overflow: hidden;
+    }
+
+    .start-slide{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .slide-left{
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition-duration: 2s;
+    }
+
+    .slide-right{
+        position: absolute;
+        top: 0;
+        left: 1000px;
+        transition-duration: 2s;
+    }
+
+    .move-scroll-down{
+        position: absolute;
+        /* top: 1080px; */ top: 0;
+        left: 200%;
+        transition-duration: 2s;
+    }
+
+    .move-scroll-up{
+        position: absolute;
+        top: 0;
+        left: 27%;
+        transition-duration: 2s;
+    }
+    
+    .start-position{
+        position: absolute;
+        top: 0;
+        left: 27%;
+    }
+
+    .page{
+        width: 400px;
+        opacity: 100 !important;
     }
 
     .text-banner{
@@ -262,7 +430,7 @@
     }
 
     .hype-content img{
-        width: 70%;
+        width: 100%;
     }
 
     .gallery{
@@ -283,6 +451,10 @@
     .banner-button{
         width: 100%;
     }
+    .footer{
+        height: auto;
+    }
+
     .footer-logo{
         width: 100%;
     }
@@ -290,9 +462,59 @@
 }
 
 @media (min-width: 922px) and (max-width: 1200px){
-    @keyframes scroll-down{
-        0%{position: relative; top: 0; right: 0px;}
-        100%{top: 2220px; right: 20px;}
+    .head-banner{
+        overflow: hidden;
+    }
+
+    .start-slide{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .slide-left{
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition-duration: 2s;
+    }
+
+    .slide-right{
+        position: absolute;
+        top: 0;
+        left: 1000px;
+        transition-duration: 2s;
+    }
+
+    .hide{
+        opacity: 0;
+    }
+    .show{
+        transition-delay: 1.8s;
+        opacity: 100;
+    }
+    .move-scroll-down{
+        position: absolute;
+        /* top: 1073px; */ top: 0;
+        left: 200%;
+        transition-duration: 2s;
+    }
+
+    .move-scroll-up{
+        position: absolute;
+        top: 0;
+        left: 15%;
+        transition-duration: 2s;
+    }
+    
+    .start-position{
+        position: absolute;
+        top: 0;
+        left: 15%;
+    }
+
+    .page{
+        opacity: 100 !important;
     }
 
     .text-banner{
@@ -368,6 +590,18 @@
 }
 
 @media (min-width: 1200px){
+    #phone-hide{
+        opacity: 0 !important;
+    }
+
+    #phone-scroll{
+        opacity: 100 !important;
+    }
+
+    .page{
+        opacity: 100 !important;
+    }
+
     .main-style .container{
         max-width: 100%;
     }
