@@ -385,6 +385,11 @@ button img{
 
 .row{
     width: 100%;
+    /* height: auto; */
+}
+
+.col{
+    /* height: 20px; */
 }
 
 .col-12{
@@ -407,7 +412,7 @@ button img{
 }
 
 .footer-logo{
-    margin-top: 100px;
+    margin-top: 50px;
     width: 30%;
 }
 /* End Footer */

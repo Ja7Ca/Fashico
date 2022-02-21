@@ -235,13 +235,15 @@
 
     .shop-content div{
         /* width: auto; */
-        width: 90%;
-        height: 50%;
+        top: 85px;
+        width: 100%;
+        height: 60%;
     }
 
     .shop-content div img{
         /* width: auto; */
-        height: 50%;
+        /* height: 70%; */
+        width: 40%;
         /* opacity: 0; */
     }
 

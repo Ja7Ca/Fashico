@@ -21,7 +21,7 @@
         <div class="head-nav">
             <div class="container d-flex justify-content-lg-between justify-content-sm-between justify-content-around align-items-center position-relative">
                 <div class="logo d-flex align-items-center justify-content-between justify-content-lg-center">
-                    <img src="Asset/Left align.png" class="navigator" onclick="showNavigator()"><p>Fashico</p>
+                    <img src="Asset/Left align.png" class="navigator" onclick="showNavigator()" id="navigator"><p>Fashico</p>
                 </div>
                 <div class="page d-flex flex-column flex-sm-row justify-content-between align-items-sm-center align-items-start" id="page">
                     <a href="#">Marketplace</a>
@@ -299,10 +299,18 @@
     </script>
 
     <script>
+    const navPage = document.getElementById("page");
+    const widthScrenn = screen.width;
+
     if(screen.width > 400){
-      const page = document.getElementById("page");
-        page.style.opacity = 100;
+        const nav = document.getElementById("navigator");
+        navPage.style.opacity = 100;
     }
+    
+    window.onresize = function(){
+        navPage.style.opacity = 0;
+    }
+
     window.onscroll = function() {myFunction()};
     
     function myFunction() {
@@ -311,6 +319,9 @@
             panjang = 1000;
         }
 
+        if(document.body.scrollTop > 10 || document.documentElement.scrollTop > 10){
+            navPage.style.opacity = 0;
+        }
 
         if (document.body.scrollTop > panjang || document.documentElement.scrollTop > panjang) {
             document.getElementById("phone-scroll").className = "move-scroll-down";
