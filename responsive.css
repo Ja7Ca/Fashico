@@ -224,7 +224,7 @@
         /* width: 98vw; */
         width: 100%;
         min-height: 500px;
-        overflow: auto;
+        overflow: hidden;
     }
 
     .kolom{
