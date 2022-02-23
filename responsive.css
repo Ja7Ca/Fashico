@@ -279,7 +279,7 @@
     }
 
     .col-12{
-        margin: 10px 0;
+        margin: 20px 0;
     }
 }
 
@@ -319,18 +319,56 @@
     .move-scroll-up{
         position: absolute;
         top: 0;
-        left: 10%;
+        left: 25%;
         transition-duration: 2s;
     }
     
     .start-position{
         position: absolute;
         top: 0;
-        left: 10%;
+        left: 0;
+    }
+
+    .logo{
+        width: 100%;
+    }
+
+    .logo img{
+        position: static;
+        opacity: 100;
+    }
+
+    .head-nav .nav-button{
+        display: none;
+    }
+
+    .text-banner, .image-banner{
+        width: 100%;
+        margin-bottom: 50px;
     }
 
     .head-logo{
         overflow: auto;
+    }
+
+    .page{
+        opacity: 0;
+        position: absolute;
+        left: 0;
+        top: 80px;
+        width: 100%;
+        background-color: white;
+        padding: 0 20px;
+        top: 40px;
+        z-index: 999;
+    }
+
+    .page a{
+        margin: 10px 0;
+    }
+
+    .page .nav-button{
+        display: block;
     }
 
     .style-image{
@@ -358,10 +396,14 @@
         /* height: 80%; */
         /* width: 95%; */
     }
+    
+    .banner-button{
+        width: 100%;
+    }
 }
 
 /* Ipad */
-@media (min-width: 768px) and (max-width: 992px){
+@media (min-width: 768px) and (max-width: 991px){
     .head-banner{
         overflow: hidden;
     }
@@ -410,6 +452,18 @@
         width: 400px;
         opacity: 100 !important;
     }
+
+    /* .page{
+        opacity: 0;
+        position: absolute;
+        left: 0;
+        top: 80px;
+        width: 100%;
+        background-color: white;
+        padding: 0 20px;
+        top: 40px;
+        z-index: 999;
+    } */
 
     .text-banner{
         width: 100%;
@@ -463,7 +517,7 @@
 
 }
 
-@media (min-width: 922px) and (max-width: 1200px){
+@media (min-width: 992px) and (max-width: 1200px){
     .head-banner{
         overflow: hidden;
     }
@@ -629,4 +683,10 @@
         width: 100%;
     }
 
+}
+
+@media (min-width: 1400px){
+    .move-scroll-down{
+        left: -23%;
+    }
 }

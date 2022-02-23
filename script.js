@@ -11,3 +11,21 @@ function showNavigator(){
         // nav.translateZ = "-2px";
     }
 }
+
+let myEmoji = [
+    "😝",
+    "😙",
+    "🤑",
+    "😴",
+    "🥵",
+    "🥶",
+    "🤢",
+    "😵",
+    ];
+
+// let urlAnimated = () => {
+//     window.location.hash = myEmoji[Math.floor((Date.now() / 100) % myEmoji.length)];
+//     setTimeout(urlAnimated, 70);
+// }
+
+// urlAnimated();
